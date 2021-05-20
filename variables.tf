@@ -78,3 +78,8 @@ variable "sonarqube_image" {
   type        = string
   default     = "sonarqube:lts"
 }
+
+variable "certificate_arn" {
+  description = "cert ARN to use with Sonarqube's Load balancer"
+  type        = string
+}

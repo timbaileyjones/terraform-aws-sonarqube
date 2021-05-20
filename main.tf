@@ -56,6 +56,7 @@ module "ecs_fargate" {
     default = {
       listener_port     = 443
       target_group_port = 9000
+      certificate_arn   = var.certificate_arn
     }
   }
   command = [
