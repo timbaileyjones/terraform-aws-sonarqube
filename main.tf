@@ -77,6 +77,11 @@ module "ecs_fargate" {
       containerPort = 9000
       hostPort      = 9000
       protocol      = "tcp"
+    },
+    {
+      containerPort = 9001
+      hostPort      = 9000
+      protocol      = "tcp"
     }
   ]
   environment = [
