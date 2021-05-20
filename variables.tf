@@ -78,3 +78,12 @@ variable "sonarqube_image" {
   type        = string
   default     = "sonarqube:lts"
 }
+
+#------------------------------------------------------------------------------
+# Sonarqube image version
+#------------------------------------------------------------------------------
+variable "certifcate_arn" {
+  description = "ACM certificate to attach to ELB"
+  type        = string
+  default     = ""
+}
