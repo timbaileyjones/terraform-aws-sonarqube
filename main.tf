@@ -59,6 +59,9 @@ module "ecs_fargate" {
       certificate_arn   = var.certificate_arn
     }
   }
+
+  default_certificate_arn = var.certificate_arn
+
   command = [
     "-Dsonar.search.javaAdditionalOpts=-Dnode.store.allow_mmap=false"
   ]
